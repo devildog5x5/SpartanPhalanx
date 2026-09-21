@@ -6,11 +6,18 @@
   <title>Spartan Phalanx — Ops, SecOps &amp; Infrastructure Consulting</title>
   <meta name="description" content="Spartan Phalanx provides operations, security operations, and infrastructure consulting. Shoulder to shoulder. Shield to shield." />
   <meta name="theme-color" content="#1a1410" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem("spartanphalanx-theme");
+      var themes = { light: 1, dark: 1, green: 1, "light-green": 1, blue: 1, "light-blue": 1 };
+      document.documentElement.setAttribute("data-theme", themes[saved] ? saved : "dark");
+    })();
+  </script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/site.css?v=1.0.7" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -27,9 +34,25 @@
       <a href="#engagements">Engagements</a>
       <a class="nav-cta" href="#contact">Contact</a>
     </nav>
-    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Menu">
-      <span></span><span></span>
-    </button>
+    <div class="header-tools">
+      <div class="settings">
+        <button type="button" class="settings-btn" id="settings-toggle" aria-expanded="false" aria-controls="settings-panel">Settings</button>
+        <div class="settings-panel" id="settings-panel" hidden>
+          <p class="settings-label" id="settings-label">Appearance</p>
+          <div class="theme-list" role="radiogroup" aria-labelledby="settings-label">
+            <button type="button" role="radio" data-theme="light" aria-checked="false">Light</button>
+            <button type="button" role="radio" data-theme="dark" aria-checked="true">Dark</button>
+            <button type="button" role="radio" data-theme="green" aria-checked="false">Green</button>
+            <button type="button" role="radio" data-theme="light-green" aria-checked="false">Light soothing green</button>
+            <button type="button" role="radio" data-theme="blue" aria-checked="false">Blue</button>
+            <button type="button" role="radio" data-theme="light-blue" aria-checked="false">Light blue</button>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <div class="nav-drawer" id="nav-drawer" hidden>
@@ -215,11 +238,11 @@
         <p class="contact-phone">
           <a href="tel:+18013191061">801.319.1061</a>
         </p>
-        <p class="fine">© 2026 Robert Foster · Spartan Phalanx v1.0.6</p>
+        <p class="fine">© 2026 Robert Foster · Spartan Phalanx v1.0.7</p>
       </div>
     </section>
   </main>
 
-  <script src="assets/site.js"></script>
+  <script src="assets/site.js?v=1.0.7"></script>
 </body>
 </html>
