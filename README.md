@@ -1,6 +1,6 @@
 # Spartan Phalanx
 
-Ops, SecOps, and infrastructure consulting — a locked line of expertise for teams that hold under pressure.
+Ops, SecOps, and infrastructure consulting. Shoulder to shoulder. Shield to shield.
 
 **Site:** open `index.html` locally, or deploy the repo root to Hostinger `public_html`.
 
