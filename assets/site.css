@@ -380,12 +380,19 @@ a:hover { color: #fff; }
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
 }
-.contact-mail a {
+.contact-phone {
+  margin: 12px 0 0 !important;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+}
+.contact-mail a,
+.contact-phone a {
   color: var(--bronze-hot);
   text-decoration: none;
   border-bottom: 1px solid rgba(196, 160, 98, 0.4);
 }
-.contact-mail a:hover {
+.contact-mail a:hover,
+.contact-phone a:hover {
   color: #fff;
   border-bottom-color: #fff;
 }
