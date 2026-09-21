@@ -22,6 +22,8 @@
 
 html { scroll-behavior: smooth; }
 
+section[id] { scroll-margin-top: 88px; }
+
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -142,11 +144,10 @@ a:hover { color: #fff; }
 
 .hero {
   position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 0;
   display: grid;
   align-items: end;
-  padding: clamp(100px, 16vh, 160px) clamp(18px, 4vw, 40px) clamp(56px, 10vh, 96px);
+  padding: clamp(128px, 18vh, 180px) clamp(18px, 4vw, 40px) clamp(72px, 12vh, 120px);
   overflow: hidden;
   background:
     radial-gradient(ellipse 90% 70% at 70% 20%, rgba(155, 47, 42, 0.28), transparent 55%),
@@ -386,13 +387,17 @@ a:hover { color: #fff; }
 
 .contact-mail {
   margin: 28px 0 0 !important;
-  font-family: var(--font-display);
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 .contact-phone {
-  margin: 12px 0 0 !important;
-  font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  margin: 10px 0 0 !important;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 .contact-mail a,
 .contact-phone a {
