@@ -1,6 +1,8 @@
 # Build
 node_modules/
 dist/
+build/
+installers/
 .DS_Store
 Thumbs.db
 *.log
