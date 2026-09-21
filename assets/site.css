@@ -95,6 +95,30 @@ html[data-theme="light-green"] {
   --theme-color: #e7f2ea;
 }
 
+html[data-theme="dark-green"] {
+  --ink: #e7f3ec;
+  --ink-dim: #c3d8cc;
+  --muted: #8eaa9c;
+  --bg: #0f1f18;
+  --bg-2: #163026;
+  --bg-3: #0b1813;
+  --line: rgba(143, 206, 176, 0.28);
+  --bronze: #8fceb0;
+  --bronze-hot: #c8e8d6;
+  --crimson: #2f6b56;
+  --crimson-hot: #3d8a6e;
+  --heading: #f4faf6;
+  --btn-text: #f4faf6;
+  --link-hover: #ffffff;
+  --hero-a: #091410;
+  --hero-b: #0f1f18;
+  --hero-c: #163026;
+  --glow: rgba(47, 107, 86, 0.42);
+  --wash: rgba(143, 206, 176, 0.14);
+  --veil: rgba(143, 206, 176, 0.05);
+  --theme-color: #0f1f18;
+}
+
 html[data-theme="blue"] {
   --ink: #f4f7fb;
   --ink-dim: #d5e0ea;
